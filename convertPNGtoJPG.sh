@@ -7,4 +7,5 @@ do
     filename=${file%.png}
     #Converts all png files to .jpg while maintaining the same file name
     echo `convert -verbose $file $filename.jpg`
+    rm *.png
 done
