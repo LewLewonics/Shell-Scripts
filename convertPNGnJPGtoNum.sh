@@ -8,6 +8,6 @@ do
     filename=($file)
     filename=$(echo "${filename: -4}")
     echo "$filename"
-    cp $file $counter$filename
+    mv $file $counter$filename
     ((counter++))
 done
